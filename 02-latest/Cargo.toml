@@ -1,0 +1,13 @@
+[package]
+name = "issue-02"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+opentelemetry = "0.26.0"
+opentelemetry-otlp = "0.26.0"
+opentelemetry_sdk = { version = "0.26.0", features = ["rt-tokio"] }
+tokio = { version = "1.32.0", features = ["macros", "rt-multi-thread"] }
+tracing = "0.1"
+tracing-opentelemetry = "0.27.0"
+tracing-subscriber = { version = "0.3" }
